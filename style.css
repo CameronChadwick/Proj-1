@@ -3,9 +3,59 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
 }
 
+body {
+    color: #000080ff;
+}
+
 .header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000080ff;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+
+.list-wrapper {
+    display: flex;
+}
+
+.left-list {
+    width: 40%;
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+.right-list {
+    width: 40%;
+    margin-left: 2%;
+    font-size: 15px;
+}
+
+.header-text {
+    margin: 0;
+}
+
+.under-items {
+    margin: 0;
+}
+
+.r-list-items {
+    margin-bottom: 15px;
+}
+
+.l-list-items {
+    margin-bottom: 33px;
+}
+
+.geico-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 10px; 
+}
+
+hr {
+    margin-left: 6px;
+    margin-right: 6px;
 }
