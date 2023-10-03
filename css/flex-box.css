@@ -203,3 +203,51 @@
     margin-top: 1px;
 }
 
+/* Problem 3 */
+
+.header-1 {
+    background-color: #9BCF0B;
+    height: 100px;
+}
+
+.mid-container-2 {
+    display: flex;
+}
+
+.article-1 {
+    background-color: white;
+    height: 300px;
+    width: 60%;
+}
+
+.aside-1 {
+    background-color: #F6F5D7;
+    width: 20%;
+    height: 300px;
+}
+
+.nav-1 {
+    background-color: #D5E8D4;
+    width: 20%;
+    height: 300px;
+}
+
+.footer-1 {
+    background-color: #9BCF0B;
+    height: 80px;
+}
+
+body {
+    margin: 0;
+}
+
+.prob-4 {
+    display: flex;
+}
+
+.nav-2 {
+    background-color: #D5E8D4;
+    width: 20%;
+    height: 480px;
+}
+
