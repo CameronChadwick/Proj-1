@@ -1,4 +1,4 @@
-/* problem 1 */
+/* Problem 1 */
 
 .box1 {
     background-color: blue;
@@ -44,7 +44,7 @@
 }
 
 
-/* problem 2 */
+/* Problem 2 */
 
 .top-container {
     border: 2px solid black;
@@ -237,7 +237,7 @@
     height: 90px;
 }
 
-/* Problem */
+/* Problem 4 */
 
 .prob-4 {
     display: flex;
