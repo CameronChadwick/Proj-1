@@ -1,3 +1,64 @@
-body {
-    background-color: #7ec2d9;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.logo-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.home-link {
+    color: black;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-items {
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.lorem {
+    width: 50%;
+    margin: 5px 10px;
+}
+
+.lorem-h1 {
+    margin: 5px 10px;
+}
+
+.footer-line {
+    align-items: flex-end;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    border: 2px solid black;
 }
