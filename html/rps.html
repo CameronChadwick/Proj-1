@@ -25,14 +25,16 @@
     <main>
         <h1>Rock, Paper, Scissors</h1>
         <div class="choice-container">
-            <div class="user-frame">
-                <h2>User Choice</h2>
-                <img src="../img/rps4.png" class='user-img' alt="rps">
-            </div>
-            <div class="computer-frame">
-                <h2>Computer Choice</h2>
-                <img src="../img/rps4.png" class='comp-img' alt="rps">
-            </div>
+                <div class="user-frame">
+                    <h2>User Choice</h2>
+                    <img src="../img/rps4.png" class='user-img' alt="rps">
+                    <h2>User Score: <span class="user-score">0</span></h2>
+                </div>
+                <div class="computer-frame">
+                    <h2>Computer Choice</h2>
+                    <img src="../img/rps4.png" class='comp-img' alt="rps">
+                    <h2>Computer Score: <span class="comp-score">0</span></h2>
+                </div>
         </div>
         
         <h2>Result: <span class="result">Start Game</span></h2>
@@ -41,6 +43,7 @@
             <button id="rock">Rock</button>
             <button id="paper">Paper</button>
             <button id="scissors">Scissors</button>
+            <button class="reset" id="reset">Reset</button>
         </div>
     </main>
     
