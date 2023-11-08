@@ -7,7 +7,7 @@
     justify-content: space-between;
     height: 4rem;
     align-items: center;
-    background-color: #cab0ff;
+    background-color: rgb(225, 87, 87);
 }
 
 .logo {
@@ -67,7 +67,7 @@ li {
     margin: 5px 10px;
 }
 
-h1 {
+.berry-title {
     display: flex;
     justify-content: center;
     margin-top: 0px;
