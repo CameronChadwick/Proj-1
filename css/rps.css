@@ -55,7 +55,7 @@ main {
 }
 
 .choice-container {
-    width: 60%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -114,4 +114,11 @@ button {
     cursor: pointer;
     background-color: red;
     color:rgb(197, 212, 226)
+}
+
+@media (max-width: 900px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
