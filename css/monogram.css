@@ -11,18 +11,16 @@ a {
 .hero-section {
     padding-top: 1em;
     padding-bottom: 5em;
-    background-image: url(../img/snes-controller.jpg);
+    background-image: url(../img/console.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid black;
 }
 
 .hero {
     width: 90%;
     max-width: 1800px;
     margin: 10em auto;
-    border: 2px solid white;
 }
 
 .hero h1 {
@@ -86,9 +84,9 @@ nav a {
     width: 90%;
     max-width: 1800px;
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 2em;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1em;
@@ -96,13 +94,16 @@ nav a {
 }
 
 .product {
-    width: 100%;
-    border: 2px solid black;
+    width: clamp(25em, 48%, 60em);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: space-between;
 }
 
 .product img {
-    width: 100%;
-    height: 40vh;
+    display: inline;
+    aspect-ratio: 1/1;
 }
 
 .item {
@@ -123,7 +124,59 @@ nav a {
 
 footer {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #1a2456;
+    flex-wrap: wrap;
+}
+
+.top-group {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.bottom-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1em .7em;
+}
+
+.col-container-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 1em .7em;
+    width: 59%;
+}
+
+.footer-subtitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #edb591;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 1em;
+}
+
+.footer-p {
+    color: #edb591;
+    margin: .1em 0;
+}
+
+.footer-a {
+    color: #edb591;
+    margin: .25em 0;
+}
+
+.icon-links i {
+    color: #edb591;
 }
