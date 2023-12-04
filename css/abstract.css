@@ -35,11 +35,23 @@ header {
     margin-right: 3rem;
 }
 
+.intro-btn {
+    font-weight: 450;
+    text-decoration: none;
+    margin: 1rem;
+    padding: .5rem .75rem;
+    border-radius: 0.8rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
 .submit {
     width: 14rem;
     height: 3.25rem;
-    margin-right: 1rem;
-    border-radius: 0.8rem;
     background-color: #191a1b;
     color: white;
     border: 1px solid white;
@@ -49,11 +61,16 @@ header {
 .sign-in {
     width: 8rem;
     height: 3.25rem;
-    border-radius: 0.8rem;
     background-color: #4c5fd5;
     border: 1px solid black;
     color: white;
-    font-size: x-large;
+    transition: 0.5s;
+}
+
+.sign-in:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
 
 .subtitle {
@@ -105,7 +122,25 @@ header {
 
 .text-boxes {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    margin: 5rem 0;
+}
+
+.box-groups {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.box {
+    width: 45%;
+    margin: 2rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+}
+
+.box h3 {
+    margin-bottom: 1.5rem;
 }
