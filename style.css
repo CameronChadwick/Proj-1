@@ -42,12 +42,64 @@
 }
 
 main {
-    height: 500px;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 form {
-    width: 90%;
-    margin: 3em auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.big-label {
+    width: 8em;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.big-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-cont {
+    display: flex;
+}
+
+.address {
+    width: 20.5rem;
+}
+
+.not-add {
+    width: 10rem;
+}
+
+.mini-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+}
+
+.name-input {
+    width: 8rem;
+}
+
+.label-lower {
+    font-size: small;
+    
 }
 
 .footer-line {
