@@ -12,6 +12,10 @@
     background-color: #cab0ff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -48,18 +52,41 @@ main {
     justify-content: left;
 }
 
-form {
-    width: 50%;
+.form-heading {
+    margin-left: 2rem;
+}
+
+.form-title {
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-desc {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+
+main hr {
+    width: 45%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.form-assignment {
+    width: 43.5%;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .big-label {
     width: 8em;
     font-weight: bold;
-    border: 2px solid black;
     margin-right: 3rem;
     margin-bottom: 2rem;
 }
@@ -82,8 +109,27 @@ form {
     width: 20.5rem;
 }
 
-.not-add {
+.small-box {
     width: 10rem;
+}
+
+.email {
+    width: 15.5rem;
+    height: 1.4em;
+}
+
+.area {
+    width: 5rem;
+}
+
+.position {
+    width: 15.5rem;
+    height: 1.4em;
+}
+
+.photo {
+    width: 15.5rem;
+    height: 2rem;
 }
 
 .mini-group {
@@ -99,7 +145,22 @@ form {
 
 .label-lower {
     font-size: small;
-    
+}
+
+.terms {
+    margin-top: 1rem ;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    width: 36rem;
+    margin: 2rem 0;
+}
+
+.submit-btn {
+    width: 5rem;
+    height: 2rem;
 }
 
 .footer-line {
