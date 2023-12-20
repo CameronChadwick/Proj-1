@@ -71,13 +71,11 @@ main {
 }
 
 main hr {
-    width: 45%;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .form-assignment {
-    width: 43.5%;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
