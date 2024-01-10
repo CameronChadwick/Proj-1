@@ -9,7 +9,6 @@ a {
 }
 
 main {
-    /* height: 500px; */
     display: flex;
     flex-direction: column;
     justify-content: left;
