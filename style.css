@@ -4,45 +4,8 @@
     box-sizing: border-box;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    align-items: center;
-    background-color: #cab0ff;
-}
-
 a {
     text-decoration: none;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
-}
-
-.home-link {
-    color: black;
-}
-
-.title {
-    margin-left: 10px;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.nav-items {
-    margin: 0 10px;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-    padding: 2px;
 }
 
 main {

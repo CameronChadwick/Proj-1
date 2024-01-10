@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/rps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="..\index.html" class="home-link"><i class="fa-solid fa-house fa-lg"></i></a>
+            <a href="../index.html" class="home-link"><i class="fa-solid fa-house fa-lg"></i></a>
             <h1 class="title">
             Cameron Chadwick
             </h1>
@@ -19,8 +20,34 @@
         <div class="header-nav">
             <a href="..\html\strawberry.html" class="nav-items">Strawberries!</a>
             <a href="..\html\monogram.html" class="nav-items">Monogram</a>
+            <a href="..\html\abstract.html" class="nav-items">Abstract</a>
+            <a href="..\html\faq.html" class="nav-items">FAQ</a>
+            <a href="..\html\rps.html" class="nav-items">RPS</a>
+        </div>
+        <div class="header-drop">
+            <nav class="links">
+                <a href="..\html\strawberry.html" class="link">Strawberry</a>
+                <hr class="nav-split">
+                <a href="..\html\monogram.html" class="link">Monogram</a>
+                <hr class="nav-split">
+                <a href="..\html\abstract.html" class="link">Abstract</a>
+                <hr class="nav-split">
+                <a href="..\html\faq.html" class="link">FAQ</a>
+                <hr class="nav-split">
+                <a href="..\html\rps.html" class="link">RPS</a>
+                <hr class="nav-bottom">
+            </nav>
+            <div class="btns">
+                <div class="close-btn">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </div>
+                <div class="open-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
         </div>
     </header>
+    <hr class="header-split">
     <main>
         <h1>Rock, Paper, Scissors</h1>
         <div class="choice-container">
@@ -51,5 +78,6 @@
     
     
     <script src="../js/rps.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 </html>

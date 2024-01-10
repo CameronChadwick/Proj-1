@@ -1,0 +1,125 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    background-color: #cab0ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.home-link {
+    color: black;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-items {
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    padding: 2px;
+}
+
+.nav-items:hover {
+    background-color: gray;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.header-drop {
+    display: none;
+}
+
+@media (max-width: 1020px) { 
+    .header-drop {
+        display: flex;
+        flex-direction: row;
+        margin-right: 1rem;
+    }
+
+    .btns {
+        display: flex;
+    }
+    
+    .open-btn {
+        color: black;
+        font-size: x-large;
+    }
+
+    .open-btn:hover {
+        cursor: pointer;
+    }
+    
+    .close-btn {
+        color: black;
+        font-size: 1.8em;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .close-btn:hover {
+        cursor: pointer;
+    }
+    
+    nav {
+        background-color: #cab0ff;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 4.1rem;
+        left: 0;
+        z-index: 10;
+    }
+
+    .nav-bottom {
+        width: 100%;
+    }
+    
+    .link {
+        color: black;
+        text-align: center;
+        width: 20rem;
+        font-size: 2rem;
+        margin: .5rem 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .link:hover {
+        background-color: gray;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    .nav-split {
+        color: grey;
+        width: 23rem;
+    }
+
+    /* turn off extended nav */
+
+    .header-nav {
+        display: none;
+    }
+}

@@ -4,43 +4,8 @@
     padding: 0;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    height: 4rem;
-    align-items: center;
+.header, .links {
     background-color: #da53ff;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 20px;
-}
-
-.home-link {
-    color: black;
-}
-
-.title {
-    margin-left: 10px;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.nav-items {
-    margin: 0 10px;
-    text-decoration: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: black;
-    padding: 2px;
-    border: 2px solid black;
-    background-color: #a3a3a3;
 }
 
 body {
