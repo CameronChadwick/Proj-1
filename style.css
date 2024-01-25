@@ -237,7 +237,7 @@ main hr {
 
 .four-head-text {
     margin: 2rem 0;
-    width: 1rem;
+    width: 30rem;
     color: #a3a5ae;
 }
 
@@ -299,6 +299,80 @@ main hr {
 
 .card-4 {
     border-top: 3px solid #549ef2;
+}
+
+.sign-up {
+    background-image: url(img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.sign-lft {
+    width: 35%;
+    margin: 5rem 1rem;
+}
+
+.sign-rt {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 1rem;
+}
+
+.trial {
+    display: flex;
+    background-color: hsl(248, 32%, 49%);
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 .4rem hsla(249, 10%, 26%, .3);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 .4rem hsla(249, 10%, 26%, .3);
+}
+
+.form-input {
+    width: 80%;
+    margin: .5rem 0;
+    height: 2.5rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-btn {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    margin: .5rem 0;
+    width: 80%;
+    height: 2.5rem;
+}
+
+.terms {
+    color: hsl(246, 25%, 77%);
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 1020px) {
