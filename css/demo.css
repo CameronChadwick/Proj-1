@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+    }
+    
+    .box1 {
+    background-color: red;
+    /* transition: all 2s ease-in-out; */
+    }
+
+    .box1:hover {
+        width: 300px;
+    }
+    
+    .box2 {
+    background-color: red;
+    transition: all 1s ease-in-out;
+    }
+
+    .ex3-wrapper:hover .box2 {
+        width: 300px;
+    }
+    
+    .box3 {
+    background-color: blue;
+    transition: all 1s ease-in-out 1s;
+    }
+
+    .ex3-wrapper:hover .box3 {
+        width: 300px;
+    }
