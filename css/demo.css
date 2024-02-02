@@ -12,11 +12,12 @@
     align-items: center;
     font-size: 2rem;
     margin: 1rem 0;
+    background-color: black;
     }
     
     .box1 {
     background-color: red;
-    /* transition: all 2s ease-in-out; */
+    transition: all 2s ease-in-out;
     }
 
     .box1:hover {
@@ -39,4 +40,76 @@
 
     .ex3-wrapper:hover .box3 {
         width: 300px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ex4-wrapper {
+        margin: 50px 0;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ex4-lft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ex4-rt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hi {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .box4 {
+        margin: 0 0;
+        background-color: red;
+        transform-origin: 0 0;
+        transition: transform 1s ease-in-out;
+    }
+
+    .box5 {
+        margin: 0 0;
+        background-color: blue;
+        transform-origin: 0 100%;
+        transition: transform 1s ease-in-out;
+    }
+
+    .box6 {
+        margin: 0 0;
+        background-color: yellow;
+        transform-origin: 100% 0;
+        transition: transform 1s ease-in-out;
+    }
+
+    .box7 {
+        margin: 0 0;
+        background-color: green;
+        transform-origin: 100% 100%;
+        transition: transform 1s ease-in-out;
+    }
+
+    .ex4-wrapper:hover .box4 {
+        transform: rotate(90deg);
+    }
+
+    .ex4-wrapper:hover .box5 {
+        transform: rotate(-90deg);
+    }
+
+    .ex4-wrapper:hover .box6 {
+        transform: rotate(-90deg);
+    }
+
+    .ex4-wrapper:hover .box7 {
+        transform: rotate(90deg);
     }
