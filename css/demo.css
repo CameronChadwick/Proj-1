@@ -117,7 +117,7 @@
         transform: rotate(90deg);
     }
 
-    .anim-exer {
+    .anim-dots {
         width: 100%;
         height: 30rem;
         background-color: #ecf0f1;
@@ -146,6 +146,144 @@
     .dot3 {
         animation: pulse ease-in-out .6s infinite alternate;
         animation-delay: .4s;
+    }
+
+    /* pokeball */
+
+    .anim-ball {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .black-circ {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .red-half {
+        width: 85%;
+        height: 42.5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .red-lft {
+        width: 50%;
+        height: 100%;
+        background-color: red;
+        border-top-left-radius: 100%;
+    }
+
+    .red-rt {
+        width: 50%;
+        height: 100%;
+        background-color: red;
+        border-top-right-radius: 100%;
+    }
+
+    .bottom-half {
+        width: 85%;
+        height: 42.5%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grey-shadow {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .grey-lft {
+        width: 50%;
+        height: 100%;
+        background-color: lightgray;
+        border-bottom-left-radius: 100%;
+    }
+
+    .grey-rt {
+        width: 50%;
+        height: 100%;
+        background-color: lightgray;
+        border-bottom-right-radius: 100%;
+    }
+
+    .white-half {
+        position: absolute;
+        width: 15rem;
+        height: 7.5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .white-lft {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-bottom-left-radius: 100%;
+    }
+
+    .white-rt {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-bottom-right-radius: 100%;
+    }
+
+    .black-line {
+        width: 16rem;
+        height: 2rem;
+        background-color: black;
+        position: absolute;
+    }
+
+    .black-center {
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mini-white {
+        width: 70%;
+        height: 70%;
+        background-color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mini-black {
+        width: 90%;
+        height: 90%;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .white-center {
+        width: 85%;
+        height: 85%;
+        background-color: white;
+        border-radius: 100%;
     }
 
     @keyframes pulse {
