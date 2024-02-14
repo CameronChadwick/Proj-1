@@ -148,7 +148,23 @@
         animation-delay: .4s;
     }
 
+    @keyframes pulse {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.5);
+        }
+    }
+
     /* pokeball */
+
+    .ball-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px;
+    }
 
     .anim-ball {
         display: flex;
@@ -156,7 +172,8 @@
         align-items: center;
         width: 300px;
         height: 300px;
-        
+        transform-origin: 50% 100%;
+        animation: roll linear 2s infinite;
     }
 
     .black-circ {
@@ -286,11 +303,17 @@
         border-radius: 100%;
     }
 
-    @keyframes pulse {
-        from {
-            transform: scale(1);
+    @keyframes roll {
+        0% {
+            transform: rotate(0deg);
         }
-        to {
-            transform: scale(1.5);
+        25% {
+            transform: rotate(-25deg);
+        }
+        75% {
+            transform: rotate(25deg);
+        }
+        100% {
+            transform: rotate(0deg);
         }
     }
