@@ -375,6 +375,28 @@ main hr {
     margin-bottom: 1rem;
 }
 
+.weather-widget {
+    align-self: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: .5em;
+}
+
+.weather-lft, .weather-rt {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: small;
+    margin: 0 1em;
+    align-items: start;
+}
+
+.condition-img {
+    width: 3em;
+    height: 3em;
+}
+
 @media (max-width: 1020px) {
     .four-head-text {
         width: 80%;
@@ -399,5 +421,11 @@ main hr {
 
     .card-wrapper {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 632px) {
+    .weather-widget {
+        display: none;
     }
 }

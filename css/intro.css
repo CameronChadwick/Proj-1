@@ -5,13 +5,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 a {
     text-decoration: none;
     color: black;
-}
-
-.drop {
-    display: none;
 }
 
 .head-lft {
@@ -27,10 +28,94 @@ a {
     margin-right: 3rem;
 }
 
-.drop-name {
+.feat, .comp, .feat-close, .comp-close {
+    width: 5.5rem;
     margin-right: 2rem;
+    cursor: pointer;
+}
+
+.feat-close, .comp-close {
+    font-weight: 600;
+    display: none;
+}
+
+.feat:hover, .comp:hover {
+    font-weight: 600;
+}
+
+.drop-feat {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 6rem;
+    height: 11rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px black;
+}
+
+.drop-comp {
+    display: none;
+    position: absolute;
+    top: 4.5rem;
+    left: 18rem;
+    height: 8.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px black;
 }
 
 .nav-item {
     margin-right: 2rem;
+}
+
+.drop-item {
+    margin: .5rem 1.5rem;
+}
+
+.comp-link {
+    margin: .5rem 1.5rem;
+}
+
+.nav-item:hover {
+    font-weight: 600;
+}
+
+.head-rt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 6rem;
+    height: 2.5rem;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: 2px solid grey;
+}
+
+.login:hover {
+    font-weight: 600;
+}
+
+.sign-up:hover {
+    font-weight: 600;
+    border: 2px solid black;
 }
