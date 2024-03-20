@@ -392,6 +392,10 @@ main hr {
     align-items: start;
 }
 
+.condition {
+    text-transform: capitalize;
+}
+
 .condition-img {
     width: 3em;
     height: 3em;

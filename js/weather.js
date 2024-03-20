@@ -1,7 +1,3 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?'
-const key = 'a6c744f76c92ffe2b16d0de1a1816392'
-const units = 'imperial'
-
 const fullDate = document.querySelector('.date')
 const time = document.querySelector('.time')
 
@@ -19,8 +15,48 @@ if (hours == 0) {hours = 12}
 let currentTime = `${hours}:${mins}${amPm}`
 let currentDate = `${month}/${date}/${year}`
 
-console.log(currentDate)
-console.log(currentTime)
-
 fullDate.textContent = currentDate
 time.textContent = currentTime
+
+const clouds = ['few clouds', 'scattered clouds', 'broken clouds']
+const rain = ['shower rain', 'rain', 'mist']
+let lat = 43.6591
+let lon = -70.2568
+const key = 'a6c744f76c92ffe2b16d0de1a1816392'
+const units = 'imperial'
+
+let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&apikey=${key}&units=${units}`
+
+let tempText = document.querySelector('.temp')
+let conditionText = document.querySelector('.condition')
+let condImg = document.querySelector('.condition-img')
+let img
+
+async function getWeather() {
+    try {
+        const response = await fetch(url)
+        const data = await response.json()
+
+        let currentTemp = Math.round(data.main.temp)
+        let currentCond = data.weather[0].description
+
+        if (clouds.includes(currentCond)) {
+            img = 'partly-cloudy.png'
+        } else if (rain.includes(currentCond)) {
+            img = 'rain.png'
+        } else if (currnetCond == 'thunderstorm') {
+            img = 'rain-storm.png'
+        } else if (currentCond == 'snow') {
+            img = 'snow.png'
+        } else {img = 'sunny'}
+
+        condImg.src = `../weather-imgs/${img}`
+
+        conditionText.textContent = `${currentCond}`
+        tempText.textContent = `${currentTemp}*`
+    } catch {error} {
+        console.error()
+    }
+}
+
+getWeather()
