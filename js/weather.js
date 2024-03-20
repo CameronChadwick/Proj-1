@@ -1,3 +1,23 @@
+// IP Geolocation
+
+const ipKey = '7915db329f04435eace40f7f46198514'
+let ipUrl = `https://api.geoapify.com/v1/ipinfo?&apiKey=${ipKey}`
+
+async function getIp() {
+    try {
+        const ipResponse = await fetch(ipUrl)
+        const ipData = await ipResponse.json()
+        
+        console.log(ipData)
+    } catch {error} {
+        console.error()
+    }
+}
+
+getIp()
+
+// Date & Time
+
 const fullDate = document.querySelector('.date')
 const time = document.querySelector('.time')
 
@@ -18,7 +38,9 @@ let currentDate = `${month}/${date}/${year}`
 fullDate.textContent = currentDate
 time.textContent = currentTime
 
-const clouds = ['few clouds', 'scattered clouds', 'broken clouds']
+// Weather
+
+const clouds = ['few clouds', 'scattered clouds', 'broken clouds', 'overcast clouds']
 const rain = ['shower rain', 'rain', 'mist']
 let lat = 43.6591
 let lon = -70.2568
@@ -44,11 +66,13 @@ async function getWeather() {
             img = 'partly-cloudy.png'
         } else if (rain.includes(currentCond)) {
             img = 'rain.png'
-        } else if (currnetCond == 'thunderstorm') {
+        } else if (currentCond = 'thunderstorm') {
             img = 'rain-storm.png'
-        } else if (currentCond == 'snow') {
+        } else if (currentCond = 'snow') {
             img = 'snow.png'
-        } else {img = 'sunny'}
+        } else if (currentCond = 'sunny') {
+            img = 'sunny'
+        }
 
         condImg.src = `../weather-imgs/${img}`
 
